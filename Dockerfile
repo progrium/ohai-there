@@ -9,4 +9,4 @@ ADD ./build/ohaithere /bin/ohaithere
 USER nobody
 EXPOSE 8000
 
-ENTRYPOINT ["/usr/ohaithere"]
+ENTRYPOINT ["/bin/ohaithere"]
