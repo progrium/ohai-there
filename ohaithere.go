@@ -2,9 +2,7 @@ package main
 
 import (
 	"bytes"
-	"errors"
 	"io"
-	"io/ioutil"
 	"log"
 	"net/http"
 	"os"
