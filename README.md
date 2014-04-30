@@ -36,11 +36,11 @@ Or you can see all attributes by not specifying:
 
 ## Usefulness from inside a container
 
-Certainly many of the attributes are not useful since they're attributes of the container environment. For example, it would be really nice if hostname and IP attributes worked. If somebody can come up with a clever way to make them work, that'd be great. But for basic system information and resource (CPU, memory), it's still very useful. 
+Certainly many of the attributes are not useful since they're attributes of the container environment. For example, it would be really nice if the hostname and IP attributes reflected that of the host. If somebody can come up with a clever way to make that work, that'd be great. But for basic system information and resource (CPU, memory), it's still very useful. 
 
-One todo is to turn off builtin ohai plugins that provide totally useless information, or information we'll never get to accruately reflect the host from inside a container. 
+One todo is to turn off builtin ohai plugins that provide totally useless information, or information we'll never get to accurately reflect the host from inside a container. 
 
-So why even run it in a container? Well, ohai is a great command-line tool that works standalone. More people should use it. This version turns it into a web service that can quickly and easily run on any host with Docker. I made it to work with Flynn Layer 0 so that tooling can better programmatically know about the hosts they run on. 
+So why even run it in a container? Well, ohai is a great command-line system profiling tool that works standalone. More people should use it. This version turns it into a web service that can quickly and easily run on any host with Docker. I made it to work with Flynn Layer 0 so that Flynn tooling can better programmatically know about the hosts they run on. 
 
 ## Sponsor
 
